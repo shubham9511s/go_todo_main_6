@@ -7,13 +7,13 @@ WORKDIR /app
 # Copy the source code into the container
 COPY . .
 
-# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed
+# Download all dependencies.
 RUN go mod download
 
 # Build the Go app
 RUN go build -o main .
 
-###############################################################################################################
+#############################################################################
 
 # Stage 2: Create the final image with Ubuntu
 FROM ubuntu:22.04
