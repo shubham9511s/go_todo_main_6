@@ -92,7 +92,7 @@ func enableCors(w *http.ResponseWriter) {
 
 func main() {
 	var err error
-	client, err = mongo.NewClient(options.Client().ApplyURI("mongodb://todoadm:todoadm@54.208.42.87/todo"))
+	client, err = mongo.NewClient(options.Client().ApplyURI("mongodb://todoadmin:todoadmin@51.20.63.48:27017/todo"))
 	if err != nil {
 		log.Fatal(err)
 	}
