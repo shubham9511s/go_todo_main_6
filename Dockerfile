@@ -34,7 +34,7 @@ WORKDIR /home/appuser
 COPY --from=builder /app/main .
 
 # Expose port
-EXPOSE 8080
+EXPOSE 8086
 
 # Command to run the executable
 CMD ["./main"]
