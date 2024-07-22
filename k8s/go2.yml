@@ -19,7 +19,7 @@ spec:
       - name: go-2
         image: shubhamshinde2206/go-2:tag
         ports:
-        - containerPort: 8000
+        - containerPort: 8086
 
 ---
 
@@ -32,5 +32,5 @@ spec:
     app: go-2
   ports:
     - protocol: TCP
-      port: 8000
-      targetPort: 8000
+      port: 8086
+      targetPort: 8086
