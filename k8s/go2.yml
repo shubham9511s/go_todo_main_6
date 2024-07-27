@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: go-2
-        image: shubhamshinde2206/go-2:10055814076
+        image: shubhamshinde2206/go-2:10123526206
         ports:
         - containerPort: 8086
 
