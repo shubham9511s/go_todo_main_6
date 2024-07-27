@@ -28,6 +28,7 @@ kind: Service
 metadata:
   name: go-2-service
 spec:
+  type: NodePort
   selector:
     app: go-2
   ports:
