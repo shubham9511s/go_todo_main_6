@@ -92,7 +92,7 @@ func enableCors(w *http.ResponseWriter) {
 
 func main() {
 	var err error
-	client, err = mongo.NewClient(options.Client().ApplyURI("mongodb://admin:password@52.66.247.95:27017/todo?directConnection=true&appName=mongosh+2.2.12"))
+	client, err = mongo.NewClient(options.Client().ApplyURI("mongodb://admin:password@3.110.103.165:27017/todo?directConnection=true&appName=mongosh+2.2.12"))
 	if err != nil {
 		log.Fatal(err)
 	}
